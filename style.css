@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: "Times New Roman", Georgia, serif;
     margin: 0;
@@ -5,23 +6,50 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background: #2c3e50;
+/* Sidebar container */
+.sidebar {
+    width: 220px;             /* fixed width for sidebar */
+    background: #2c3e50;      /* match your header color */
     color: #fff;
     padding: 2rem;
-    text-align: center;
+    height: 100vh;            /* full viewport height */
+    box-sizing: border-box;
+    position: fixed;          /* stays visible while scrolling */
+    display: flex;
+    flex-direction: column;   /* stack links vertically */
+    gap: 1rem;
+    z-index: 1000;            /* ensure sidebar is on top */
 }
 
-header nav a {
+/* Sidebar links */
+.sidebar a {
     color: #fff;
-    margin: 0 1rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
+.sidebar a:hover {
+    color: #1abc9c;           /* highlight color on hover */
+}
+
+/* Optional: sidebar heading */
+.sidebar h2 {
+    margin-bottom: 2rem;
+}
+
+/* Main content next to sidebar */
+.main-content {
+    margin-left: 240px;       /* leave space for sidebar */
+    padding: 2rem;
+    max-width: 800px;         
+}
+
+/* Sections */
 section {
     padding: 2rem;
     max-width: 800px;
-    margin: auto;
+    margin: auto 0;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -29,6 +57,7 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* Projects (if used on projects page) */
 .project {
     margin-bottom: 1.5rem;
 }
@@ -38,9 +67,11 @@ h2 {
     height: auto;
 }
 
+/* Footer */
 footer {
     background: #2c3e50;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
