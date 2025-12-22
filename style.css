@@ -96,20 +96,13 @@ header h1 {
     max-width: 600px;         
 }
 
+/* Remove the duplicate section rules and replace with this: */
 section {
     padding: 2rem;
-    max-width: 600px;  /* Changed from 800px */
-    margin: auto 0;
+    max-width: 600px;
+    margin: 0 auto;  /* Changed from 'auto 0' - this centers horizontally */
     margin-bottom: 2rem;
-    margin-left: 220px;
-}
-
-/* Sections */
-section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto 0;
-    margin-bottom: 2rem;
+    margin-left: calc(220px + ((100vw - 220px - 600px) / 2));  /* Centers in remaining space after sidebar */
 }
 
 h2 {
