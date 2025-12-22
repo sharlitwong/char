@@ -77,9 +77,14 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Full-screen project sections */
+#projects {
+    margin: 0;
+    padding: 0;
+}
+
 .project {
-    min-height: 100vh;              /* each project fills the screen */
+    min-height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,9 +92,18 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: relative;
 }
+
+.project-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 235, 208, 0.6); /* optional translucent box */
+    padding: 2rem 2.5rem;
+    max-width: 600px;
+    border-radius: 12px;
+    text-align: center;
+}
+
 
 .bg-snake {
     background-image: url("snake.jpg");
@@ -99,13 +113,6 @@ h2 {
     background-image: url("car.png");
 }
 
-.project-content {
-    background: rgba(255, 235, 208, 0.85); /* matches your site palette */
-    color: #173b61;
-    padding: 2rem 2.5rem;
-    max-width: 600px;
-}
-
 /* Footer */
 footer {
     background: #FD8916;
@@ -113,14 +120,6 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-/* ---- Full-width PROJECTS ONLY ---- */
-/* ---- Full-width PROJECTS ONLY ---- */
-#projects {
-    max-width: none;              /* override section width */
-    padding: 0;                   /* remove section padding */
-    width: calc(100vw - 220px);   /* viewport minus sidebar */
 }
 
 
