@@ -13,41 +13,42 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #004D44;   /* light gray example */
+    background-color: #004D40;   /* light gray example */
 }
 
 .about-page {
     /*background-image: url("brighter.png");*/
-    background-color:#004D44;
+    background-color:#004D40;
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
 }
 
 .about-box {
-    width: fit-content;  /* Add this line */
-    background-color: transparent;  /* or just remove this line */
-    border: 2px solid #ffffff;  /* Add this for outline */
+    width: fit-content; 
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.65); 
     backdrop-filter: blur(5px);
     padding: 1.25rem;
     border-radius: 0px;
-    margin-bottom: 1.5rem;
-    color: #ffffff; /* text color */
+    /* margin-bottom: 1.5rem; */
+    margin: 0 auto 1.5rem auto;  
+    color: rgba(255, 255, 255, 0.65); /* text color */
     /* box-shadow: 8px 8px 0px var(--mulberry);  offset-x, offset-y, blur, color */
 }
 
 /* Change header background color */
 header {
-    /* background-color: #ffffff;  or whatever color you want */
+    /* background-color: rgba (255, 255, 255, 0.65);  or whatever color you want */
     padding: 1rem;
     backdrop-filter: blur(5px);
     background-color: transparent;  /* or just remove this line */
-    border: 2px solid #ffffff;  /* Add this for outline */
+    border: 2px solid rgba(255, 255, 255, 0.65);  /* Add this for outline */
 }
 
 /* Change header text color */
 header h1 {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.65);
     margin: 0;
     font-family: 'Jersey 10', sans-serif;
     font-size: 60px;           /* Makes it bigger (adjust as needed) */
@@ -57,9 +58,9 @@ header h1 {
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: #ffffff; 
+    background: rgba(255, 255, 255, 0.65); 
     backdrop-filter: blur(5px);
-    color: #004D44;
+    color: #004D40;
     padding: 2rem;
     height: 100vh;            /* full viewport height */
     box-sizing: border-box;
@@ -73,7 +74,7 @@ header h1 {
 /* Sidebar links */
 .sidebar a {
     display: block;      /* force each link to be full width */
-    color: #004D44;
+    color: #004D40;
     text-decoration: none;
     font-family: 'Jersey 10', sans-serif;
     font-weight: bold;
@@ -93,7 +94,10 @@ header h1 {
 .main-content {
     margin-left: 220px;       /* leave space for sidebar */
     padding: 2rem;
-    max-width: 600px;         
+    max-width: 600px;  
+    display: flex;            /* ADD THIS */
+    flex-direction: column;   /* ADD THIS */
+    align-items: center;  /* This centers children horizontally */       
 }
 
 /* Remove the duplicate section rules and replace with this: */
@@ -102,11 +106,10 @@ section {
     max-width: 600px;
     margin: 0 auto;  /* Changed from 'auto 0' - this centers horizontally */
     margin-bottom: 2rem;
-    margin-left: calc(220px + ((100vw - 220px - 600px) / 2));  /* Centers in remaining space after sidebar */
 }
 
 h2 {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
     padding-bottom: 0.5rem;
 }
 
@@ -132,7 +135,7 @@ h2 {
 .project-content {
     position: relative;
     z-index: 2;
-    background: rgba(255, 235, 208, 0.76); /* optional translucent box */
+    background: rgba(255, 255, 255, 0.76); /* optional translucent box */
     padding: 2rem 2.5rem;
     max-width: 600px;
     border-radius: 12px;
@@ -150,8 +153,8 @@ h2 {
 
 /* Footer */
 footer {
-    background: #004D44;
-    color: #ffffff;
+    background: #004D40;
+    color: rgba (255, 255, 255, 0.65);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
