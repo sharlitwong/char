@@ -91,7 +91,15 @@ header h1 {
 .main-content {
     margin-left: 220px;       /* leave space for sidebar */
     padding: 2rem;
-    max-width: 800px;         
+    max-width: 600px;         
+}
+
+section {
+    padding: 2rem;
+    max-width: 600px;  /* Changed from 800px */
+    margin: auto 0;
+    margin-bottom: 2rem;
+    margin-left: 220px;
 }
 
 /* Sections */
