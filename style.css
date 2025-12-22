@@ -23,6 +23,19 @@ body {
     color: #173b61; /* text color */
 }
 
+/* Change header background color */
+header {
+    background-color: #FD8916;  /* or whatever color you want */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Change header text color */
+header h1 {
+    color: #173b61;  /* or whatever color you want */
+    margin: 0;
+}
+
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
@@ -99,7 +112,7 @@ h2 {
 .project-content {
     position: relative;
     z-index: 2;
-    background: rgba(255, 235, 208, 0.6); /* optional translucent box */
+    background: rgba(255, 235, 208, 0.76); /* optional translucent box */
     padding: 2rem 2.5rem;
     max-width: 600px;
     border-radius: 12px;
