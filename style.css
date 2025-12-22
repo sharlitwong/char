@@ -1,39 +1,48 @@
+
+:root {
+    --bossanova: #544957;
+    --gamboge: #f1980d;
+    --mulberry: #d357bb;
+    --spray: #72ced7;
+    --wild-yonder: #6f85b9;
+}
+
 /* Base styles */
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #FFEBD0;   /* light gray example */
+    background-color: var(--bossanova);   /* light gray example */
 }
 
 .about-page {
     /*background-image: url("brighter.png");*/
-    background-color:#FFEBD0;
+    background-color:var(--bossanova);
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
 }
 
 .about-box {
-    background-color: rgba(255, 235, 208, 0.65); /* translucent white */
+    background-color: rgba(--wild-yonder, 0.65); /* translucent white */
     backdrop-filter: blur(5px);
     padding: 1.25rem;
     border-radius: 0px;
     margin-bottom: 1.5rem;
-    color: #173b61; /* text color */
+    color: var(--gamboge); /* text color */
 }
 
 /* Change header background color */
 header {
-    background-color: rgba(253, 137, 22, 0.75);  /* or whatever color you want */
+    background-color: rgba(--wild-yonder, 0.75);  /* or whatever color you want */
     padding: 1rem;
     backdrop-filter: blur(5px);
 }
 
 /* Change header text color */
 header h1 {
-    color: #173b61;  /* or whatever color you want */
+    color: var(--gamboge);  /* or whatever color you want */
     margin: 0;
     font-family: 'Jersey 10', sans-serif;
 }
@@ -41,9 +50,9 @@ header h1 {
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: rgba(253, 137, 22, 0.75); /* orange 75% opacity */
+    background: rgba(--wild-yonder, 0.75); /* orange 75% opacity */
     backdrop-filter: blur(5px);
-    color: #173b61;
+    color: var(--gamboge);
     padding: 2rem;
     height: 100vh;            /* full viewport height */
     box-sizing: border-box;
@@ -57,14 +66,14 @@ header h1 {
 /* Sidebar links */
 .sidebar a {
     display: block;      /* force each link to be full width */
-    color: #FFEBD0;
+    color: var(--gamboge);
     text-decoration: none;
     font-weight: bold;
 }
 
 
 .sidebar a:hover {
-    color: #173b61;           /* highlight color on hover */
+    color: var(--mulberry);           /* highlight color on hover */
 }
 
 /* Optional: sidebar heading */
@@ -88,7 +97,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #FD8916;
+    border-bottom: 2px solid var(--wild-yonder);
     padding-bottom: 0.5rem;
 }
 
@@ -132,8 +141,8 @@ h2 {
 
 /* Footer */
 footer {
-    background: #FD8916;
-    color: #FFEBD0;
+    background: var(--bossanova);
+    color: var(--gamboge);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
