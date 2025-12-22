@@ -4,12 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #99a5cd;   /* light gray example */
 }
+
 
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: #57e0da;      /* match your header color */
+    background: #451616;      /* match your header color */
     color: #fff;
     padding: 2rem;
     height: 100vh;            /* full viewport height */
@@ -55,7 +57,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #57e0da;
+    border-bottom: 2px solid #451616;
     padding-bottom: 0.5rem;
 }
 
@@ -71,7 +73,7 @@ h2 {
 
 /* Footer */
 footer {
-    background: #57e0da;
+    background: #451616;
     color: #fff;
     text-align: center;
     padding: 1rem;
