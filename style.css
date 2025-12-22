@@ -16,8 +16,9 @@ body {
 
 .about-box {
     background-color: rgba(255, 235, 208, 0.75); /* translucent white */
+    backdrop-filter: blur(5px);
     padding: 1.25rem;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-bottom: 1.5rem;
     color: #173b61; /* text color */
 }
@@ -27,6 +28,7 @@ body {
     width: 220px;             /* fixed width for sidebar */
     background: #FD8916;      /* match your header color */
     background: rgba(253, 137, 22, 0.75); /* orange 75% opacity */
+    backdrop-filter: blur(5px);
     color: #fff;
     padding: 2rem;
     height: 100vh;            /* full viewport height */
@@ -48,7 +50,7 @@ body {
 
 
 .sidebar a:hover {
-    color: #1abc9c;           /* highlight color on hover */
+    color: #173b61;           /* highlight color on hover */
 }
 
 /* Optional: sidebar heading */
@@ -76,14 +78,34 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Projects (if used on projects page) */
+/* Full-screen project sections */
 .project {
-    margin-bottom: 1.5rem;
+    min-height: 100vh;              /* each project fills the screen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
-.project img {
-    max-width: 100%;
-    height: auto;
+.bg-snake {
+    background-image: url("snake.jpg");
+}
+
+.bg-car {
+    background-image: url("car.png");
+}
+
+.project-content {
+    background: rgba(255, 235, 208, 0.85); /* matches your site palette */
+    color: #173b61;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    max-width: 600px;
 }
 
 /* Footer */
