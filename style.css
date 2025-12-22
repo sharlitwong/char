@@ -25,7 +25,7 @@ body {
 }
 
 .about-box {
-    background-color: rgba(--wild-yonder, 0.65); /* translucent white */
+    background-color:var(--wild-yonder); 
     backdrop-filter: blur(5px);
     padding: 1.25rem;
     border-radius: 0px;
@@ -35,22 +35,24 @@ body {
 
 /* Change header background color */
 header {
-    background-color: rgba(--wild-yonder, 0.75);  /* or whatever color you want */
+    background-color: var(--wild-yonder);  /* or whatever color you want */
     padding: 1rem;
     backdrop-filter: blur(5px);
 }
 
 /* Change header text color */
 header h1 {
-    color: var(--gamboge);  /* or whatever color you want */
+    color: var(--gamboge);
     margin: 0;
     font-family: 'Jersey 10', sans-serif;
+    font-size: 60px;           /* Makes it bigger (adjust as needed) */
+    letter-spacing: 0.2em;     /* Adds space between letters */
 }
 
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: rgba(--wild-yonder, 0.75); /* orange 75% opacity */
+    background: var(--wild-yonder); 
     backdrop-filter: blur(5px);
     color: var(--gamboge);
     padding: 2rem;
