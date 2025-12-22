@@ -80,7 +80,8 @@ h2 {
 #projects {
     margin: 0;
     padding: 0;
-    margin-left: 220px;  /* Add this to account for the sidebar */
+    max-width: none;  /* Override the 800px constraint */
+    margin-left: 220px;  /* Account for sidebar width */
 }
 
 .project {
