@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: "Times New Roman", Georgia, serif;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 }
 
 .about-box {
-    background-color: rgba(255, 235, 150, 0.85); /* translucent white */
+    background-color: rgba(255, 235, 150, 0.75); /* translucent white */
     padding: 1.25rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
