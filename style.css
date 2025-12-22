@@ -60,7 +60,8 @@ header {
 header h1 {
     color: rgba(255, 255, 255, 0.65);
     margin: 0;
-    font-family: 'Jersey 10', sans-serif;
+    /* font-family: 'Jersey 10', sans-serif; */
+    font-family: 'Racing Sans One', sans-serif;
     font-size: 60px;           /* Makes it bigger (adjust as needed) */
     letter-spacing: 0.2em;     /* Adds space between letters */
 }
