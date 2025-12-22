@@ -9,7 +9,7 @@ body {
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: #2c3e50;      /* match your header color */
+    background: #57e0da;      /* match your header color */
     color: #fff;
     padding: 2rem;
     height: 100vh;            /* full viewport height */
@@ -55,7 +55,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #2c3e50;
+    border-bottom: 2px solid #57e0da;
     padding-bottom: 0.5rem;
 }
 
@@ -71,7 +71,7 @@ h2 {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #57e0da;
     color: #fff;
     text-align: center;
     padding: 1rem;
