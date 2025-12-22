@@ -33,19 +33,21 @@ body {
     border-radius: 0px;
     margin-bottom: 1.5rem;
     color: var(--gamboge); /* text color */
-    box-shadow: 8px 8px 0px var(--mulberry);  /* offset-x, offset-y, blur, color */
+    /* box-shadow: 8px 8px 0px var(--mulberry);  offset-x, offset-y, blur, color */
 }
 
 /* Change header background color */
 header {
-    background-color: var(--wild-yonder);  /* or whatever color you want */
+    /* background-color: var(--wild-yonder);  or whatever color you want */
     padding: 1rem;
     backdrop-filter: blur(5px);
+    background-color: transparent;  /* or just remove this line */
+    border: 2px solid var(--wild-yonder);  /* Add this for outline */
 }
 
 /* Change header text color */
 header h1 {
-    color: var(--gamboge);
+    color: var(--bossanova);
     margin: 0;
     font-family: 'Jersey 10', sans-serif;
     font-size: 60px;           /* Makes it bigger (adjust as needed) */
@@ -57,7 +59,7 @@ header h1 {
     width: 220px;             /* fixed width for sidebar */
     background: var(--wild-yonder); 
     backdrop-filter: blur(5px);
-    color: var(--gamboge);
+    color: var(--bossanova);
     padding: 2rem;
     height: 100vh;            /* full viewport height */
     box-sizing: border-box;
@@ -71,7 +73,7 @@ header h1 {
 /* Sidebar links */
 .sidebar a {
     display: block;      /* force each link to be full width */
-    color: var(--gamboge);
+    color: var(--bossanova);
     text-decoration: none;
     font-family: 'Jersey 10', sans-serif;
     font-weight: bold;
@@ -156,7 +158,7 @@ h2 {
 /* Footer */
 footer {
     background: var(--bossanova);
-    color: var(--gamboge);
+    color: var(--wild-yonder);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
