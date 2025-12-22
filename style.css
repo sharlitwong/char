@@ -8,10 +8,11 @@ body {
 }
 
 .about-page {
-    background-image: url("brighter.png");
-    background-size: cover;
+    /*background-image: url("brighter.png");*/
+    background-color:#FFEBD0;
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .about-box {
@@ -34,6 +35,7 @@ header {
 header h1 {
     color: #173b61;  /* or whatever color you want */
     margin: 0;
+    font-family: 'Jersey 10', sans-serif;
 }
 
 /* Sidebar container */
