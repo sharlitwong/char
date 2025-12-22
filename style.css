@@ -32,7 +32,7 @@ body {
     padding: 1.25rem;
     border-radius: 0px;
     margin-bottom: 1.5rem;
-    color: var(--gamboge); /* text color */
+    color: var(--wild-yonder); /* text color */
     /* box-shadow: 8px 8px 0px var(--mulberry);  offset-x, offset-y, blur, color */
 }
 
@@ -47,7 +47,7 @@ header {
 
 /* Change header text color */
 header h1 {
-    color: var(--bossanova);
+    color: var(--wild-yonder);
     margin: 0;
     font-family: 'Jersey 10', sans-serif;
     font-size: 60px;           /* Makes it bigger (adjust as needed) */
