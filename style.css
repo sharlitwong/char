@@ -8,7 +8,7 @@ body {
 }
 
 .about-page {
-    background-image: url("boat.png");
+    background-image: url("brighter.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
 /* Sidebar container */
 .sidebar {
     width: 220px;             /* fixed width for sidebar */
-    background: #451616;      /* match your header color */
+    background: #FD8916;      /* match your header color */
     color: #fff;
     padding: 2rem;
     height: 100vh;            /* full viewport height */
@@ -63,7 +63,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #451616;
+    border-bottom: 2px solid #FD8916;
     padding-bottom: 0.5rem;
 }
 
@@ -79,7 +79,7 @@ h2 {
 
 /* Footer */
 footer {
-    background: #451616;
+    background: #FD8916;
     color: #fff;
     text-align: center;
     padding: 1rem;
