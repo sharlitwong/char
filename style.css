@@ -7,6 +7,12 @@ body {
     background-color: #99a5cd;   /* light gray example */
 }
 
+.about-page {
+    background-image: url("boat.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* Sidebar container */
 .sidebar {
