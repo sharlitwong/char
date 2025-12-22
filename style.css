@@ -25,12 +25,14 @@ body {
 }
 
 .about-box {
-    background-color:var(--wild-yonder); 
+    background-color: transparent;  /* or just remove this line */
+    border: 2px solid var(--wild-yonder);  /* Add this for outline */
     backdrop-filter: blur(5px);
     padding: 1.25rem;
     border-radius: 0px;
     margin-bottom: 1.5rem;
     color: var(--gamboge); /* text color */
+    box-shadow: 8px 8px 0px var(--mulberry);  /* offset-x, offset-y, blur, color */
 }
 
 /* Change header background color */
@@ -70,6 +72,7 @@ header h1 {
     display: block;      /* force each link to be full width */
     color: var(--gamboge);
     text-decoration: none;
+    font-family: 'Jersey 10', sans-serif;
     font-weight: bold;
 }
 
