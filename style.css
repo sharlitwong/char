@@ -6,170 +6,34 @@
     --wild-yonder: #6f85b9;
 }
 
-/* Pixel background styles */
-/* #pixel-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 1;
-} */
-
 /* Base styles */
 body {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #004D40;   /* light gray example */
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
 }
 
-.about-page {
-    /*background-image: url("brighter.png");*/
-    background-color:#004D40;
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-}
-
-.about-box { /*box that holds the title about me*/
-    width: fit-content; 
-    background-color: transparent; 
-    border: 0px solid rgba(255, 255, 255, 1); 
-    backdrop-filter: blur(5px);
-    padding: 1.25rem;
-    border-radius: 0px;
-    /* margin-bottom: 1.5rem; */
-    margin: 0 auto 1.5rem auto;  
-    color: rgba(255, 255, 255, 1); /* text color */
-    /* box-shadow: 8px 8px 0px var(--mulberry);  offset-x, offset-y, blur, color */
-}
-
-/* Change header background color */
+/* Header */
 header {
-    /* background-color: rgba (255, 255, 255, 0.65);  or whatever color you want */
     padding: 1rem;
-    backdrop-filter: blur(5px);
-    background-color: transparent;  /* or just remove this line */
-    border: 2px solid rgba(255, 255, 255, 0.65);  /* Add this for outline */
+    backdrop-filter: none; /* remove blur effect */
+    background-color: #ffffff; /* white background */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* subtle black border */
 }
 
-/* Change header text color */
 header h1 {
-    color: rgba(255, 255, 255, 1);
+    color: #000000; /* black text */
     margin: 0;
     font-family: 'Racing Sans One', sans-serif;
-    font-size: 60px;           /* Makes it bigger (adjust as needed) */
-    letter-spacing: 0.2em;     /* Adds space between letters */
+    font-size: 60px;
+    letter-spacing: 0.2em;
 }
 
-/* Sidebar container */
+/* Sidebar */
 .sidebar {
-    width: 220px;             /* fixed width for sidebar */
-    /* background: rgba(255, 255, 255, 0.65);  */
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    color: #004D40;
-    padding: 2rem;
-    height: 100vh;            /* full viewport height */
-    box-sizing: border-box;
-    position: fixed;          /* stays visible while scrolling */
-    display: flex;
-    flex-direction: column;   /* stack links vertically */
-    gap: 1rem;
-    z-index: 1000;            /* ensure sidebar is on top */
-}
-
-/* Sidebar links */
-.sidebar a {
-    display: block;      /* force each link to be full width */
-    color: #ffffff;
-    text-decoration: none;
-    /* font-family: 'Jersey 10', sans-serif; */
-    font-family: 'Racing Sans One', sans-serif;
-    font-weight: bold;
-}
-
-
-.sidebar a:hover {
-    color: var(--mulberry);           /* highlight color on hover */
-}
-
-/* Optional: sidebar heading */
-.sidebar h2 {
-    margin-bottom: 2rem;
-}
-
-/* Main content next to sidebar */
-.main-content {
-    position: relative;
-    z-index: 10;
-    margin-left: 220px;       /* leave space for sidebar */
-    padding: 2rem;
-    max-width: 600px;  
-    display: flex;            /* ADD THIS */
-    flex-direction: column;   /* ADD THIS */
-    align-items: center;  /* This centers children horizontally */       
-}
-
-/* Remove the duplicate section rules and replace with this: */
-section {
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;  /* Changed from 'auto 0' - this centers horizontally */
-    margin-bottom: 2rem;
-}
-
-h2 {
-    border-bottom: 2px solid rgba(255, 255, 255, 1);
-    padding-bottom: 0.5rem;
-}
-
-#projects {
-    margin: 0;
-    padding: 0;
-    max-width: none;  /* Override the 800px constraint */
-    margin-left: 220px;  /* Account for sidebar width */
-}
-
-.project {
-    min-height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-content {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.76); /* optional translucent box */
-    padding: 2rem 2.5rem;
-    max-width: 600px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-
-.bg-snake {
-    background-image: url("snake.jpg");
-}
-
-.bg-car {
-    background-image: url("car.png");
-}
-
-/* Footer */
-footer {
-    background: #004D40;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
+    width: 220px;
+    background-color: #ffffff; /* white sidebar */
+    backdrop-filter: none; /* remove blur*
