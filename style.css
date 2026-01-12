@@ -12,19 +12,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #004D40;
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
 }
 
 /* Header */
 header {
     padding: 1rem;
-    backdrop-filter: blur(5px);
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.65);
+    background-color: #ffffff; /* white background */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* subtle black border */
 }
 
 header h1 {
-    color: #fff;
+    color: #000000; /* black text */
     margin: 0;
     font-family: 'Racing Sans One', sans-serif;
     font-size: 60px;
@@ -34,9 +34,8 @@ header h1 {
 /* Sidebar */
 .sidebar {
     width: 220px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    color: #004D40;
+    background-color: #ffffff; /* white sidebar */
+    color: #000000; /* black text */
     padding: 2rem;
     height: 100vh;
     position: fixed;
@@ -48,14 +47,14 @@ header h1 {
 
 .sidebar a {
     display: block;
-    color: #fff;
+    color: #000000; /* black links */
     text-decoration: none;
     font-family: 'Racing Sans One', sans-serif;
     font-weight: bold;
 }
 
 .sidebar a:hover {
-    color: var(--mulberry);
+    color: var(--mulberry); /* accent color on hover */
 }
 
 /* Main content */
@@ -66,6 +65,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000000; /* black text */
 }
 
 /* Sections */
@@ -73,10 +73,11 @@ section {
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto 2rem auto;
+    color: #000000; /* black text */
 }
 
 h2 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000000; /* black underline */
     padding-bottom: 0.5rem;
 }
 
@@ -90,9 +91,7 @@ h2 {
 .project {
     min-height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #ffffff; /* white background for projects */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,26 +100,24 @@ h2 {
 .project-content {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.76);
+    background: #ffffff; /* white content background */
     padding: 2rem 2.5rem;
     max-width: 600px;
     border-radius: 12px;
     text-align: center;
+    color: #000000; /* black text */
 }
 
-/* Project backgrounds */
-.bg-snake {
-    background-image: url("snake.jpg");
-}
-
+/* Remove project background images */
+.bg-snake,
 .bg-car {
-    background-image: url("car.png");
+    background-image: none;
 }
 
 /* Footer */
 footer {
-    background: #004D40;
-    color: #fff;
+    background: #ffffff; /* white footer */
+    color: #000000; /* black text */
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
