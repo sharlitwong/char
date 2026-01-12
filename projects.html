@@ -13,16 +13,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     </head>
     <body>
+    <!-- Sidebar -->
     <nav class="sidebar">
         <h2>Charlotte Wong</h2>
-        <a href="index.html">About</a>
+        <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
+        <a href="dance.html">Dance</a>
+        <a href="art.html">Art</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <div class="main-content">
         <header>
             <h1>Projects</h1>
+            <p class="projects-blurb">
+                Projects I've worked on, in no particular order!
+            </p>
         </header>
     </div>
 
@@ -62,9 +68,31 @@
         </div>
 
         <div class="project">
+            <img src="power.png" alt="MIT NRL Research" class="project-img">
+            <div class="project-content">
+                <h3>MIT NRL Digital Twin Research</h3>
+
+                <div class="project-info">
+                    <p><strong>Field:</strong> CS </p>
+                    <p><strong>Specific:</strong> Data Analysis </p>
+                    <p><strong>Duration:</strong> Sept. 2025 - Present</p>
+                    <p><strong>Skills:</strong> Python (matplotlib, pandas, 
+                        iapws, numpy), Microsoft Office, Git</p>
+                </div>
+                
+                <p>Conduct quantitative analysis on >100K datapoints collected 
+                    from MIT's nuclear reactor (specifically throughout steady 
+                    state intervals), to compare to a digital twin software to 
+                    verify its loyalty to physical reactions.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
             <img src="piano.png" alt="Electric Piano" class="project-img">
             <div class="project-content">
                 <h3>Electric Piano</h3>
+
                 <div class="project-info">
                     <p><strong>Field:</strong> EE</p>
                     <p><strong>Specific:</strong> Embedded Systems </p>
@@ -72,11 +100,13 @@
                     <p><strong>Skills:</strong> Embedded C, STM32 (PWM, I2C, 
                         interrupts, ADC, DAC, breadboard prototyping, git)</p>
                 </div>
+
                 <p>Miniature Breadboard piano equipped with two octave whole step
                     notes and three built in songs for games facilitated by LCD.
                 </p>
             </div>
         </div>
+
     </section>
 
 

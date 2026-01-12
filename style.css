@@ -88,6 +88,15 @@ h2 {
 }
 
 /* Projects */
+
+.projects-blurb {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 600px;  /* same width as body text */
+    margin: 0.5rem auto 2rem auto; /* spacing above and below */
+    color: #333333; /* optional subtle color */
+}
+
 #projects {
     margin-left: 220px;
     padding: 0;
@@ -127,20 +136,18 @@ h2 {
 }
 
 .project-info {
-    display: flex;
-    flex-wrap: wrap;        /* wrap fields if screen is small */
-    justify-content: center; /* center under the image */
-    gap: 1rem;              /* spacing between each piece of info */
-    text-align: left;       /* make labels align neatly */
-    margin-bottom: 1rem;    /* space below info block */
-    font-size: 0.9rem;      /* slightly smaller than main text */
-    max-width: 600px;       /* same width as body text */
+    display: grid;
+    grid-template-columns: auto 1fr; /* labels left, values right */
+    gap: 0.25rem 1rem;
+    justify-content: center;          /* center the grid under image */
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
 .project-info p {
-    margin: 0;             /* remove default paragraph spacing */
+    margin: 0;
+    text-align: left;
 }
-
 
 /* Footer */
 footer {
