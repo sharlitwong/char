@@ -148,6 +148,54 @@ h2 {
     margin: 0;
     text-align: left;
 }
+/***********************************RESUME*************************************/
+
+#resume-section {
+    max-width: 900px;  /* make it wider */
+    padding: 1rem;
+}
+
+#resume-section iframe {
+    width: 150%;
+    height: 700px;  /* adjust this to fit your PDF - try different values */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Adjust main-content for resume page specifically */
+body:has(#resume-section) .main-content {
+    max-width: 950px;
+}
+
+body:has(#resume-section) footer {
+    margin-left: 150px;
+}
+
+/***********************************DANCE**************************************/
+
+.gallery {
+    margin-left: 280px;
+    margin-right: 10px;
+    padding: 1rem;
+    column-count: 3;
+    column-gap: 1.5rem;
+    max-width: none;              /* Add this */
+    box-sizing: border-box;       /* Add this */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+    display: block;
+    margin-bottom: 1.5rem;
+
+    break-inside: avoid;      /* prevents image splitting */
+}
+
+/***********************************footer*************************************/
 
 /* Footer */
 footer {

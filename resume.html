@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlotte Wong - About</title>
+    <title>Charlotte Wong - Resume</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
-<body class="about-page">
+<body>
 
     <!-- Sidebar -->
     <nav class="sidebar">
@@ -28,20 +26,30 @@
     <!-- Main content -->
     <div class="main-content">
         <header>
-            <h1>About Me</h1>
+            <h1>Resume</h1>
         </header>
 
-        <section id="about">
-            <p class="about-box">Hi! My name is Charlotte Wong, and I'm currently a sophomore at Tufts
-            University studying Electrical Engineering. </p>
-            <p class="about-box">I recently began working on this website; it's
-                very much a work in progress! 
+        <section id="resume-section">
+            <p style="text-align: center; margin-bottom: 1rem;">
+                <a href="resume.pdf" download style="color: var(--mulberry); font-weight: bold; text-decoration: none;">
+                    Download Resume (PDF)
+                </a>
             </p>
+            
+            <!-- Embedded PDF viewer -->
+            <iframe src="resume.pdf" 
+                    width="100%" 
+                    height="1000px" 
+                    style="border: 1px solid #ddd; border-radius: 8px;">
+                <p>Your browser does not support PDFs. 
+                   <a href="resume.pdf">Download the PDF</a> to view it.</p>
+            </iframe>
         </section>
-
-        <footer>
-            <p>&copy; 2025 Charlotte Wong</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Charlotte Wong</p>
+    </footer>
+
 </body>
 </html>
