@@ -174,25 +174,26 @@ body:has(#resume-section) footer {
 
 /***********************************DANCE**************************************/
 
+/***********************************DANCE**************************************/
+
 .gallery {
-    margin-left: 280px;
-    margin-right: 10px;
-    padding: 1rem;
+    margin-left: 280px;  /* your preferred margin */
+    margin-right: 0;
+    padding: 2rem;
     column-count: 3;
     column-gap: 1.5rem;
-    max-width: none;              /* Add this */
-    box-sizing: border-box;       /* Add this */
+    width: calc(100% - 280px);  /* MUST match the margin-left */
+    max-width: none;
+    box-sizing: border-box;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-
     display: block;
     margin-bottom: 1.5rem;
-
-    break-inside: avoid;      /* prevents image splitting */
+    break-inside: avoid;
 }
 
 /***********************************footer*************************************/
