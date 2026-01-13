@@ -109,24 +109,34 @@ h2 {
     color: #333333;
 }
 
+/* 
 #projects {
     margin-left: 220px;
     padding: 2rem;
     max-width: none;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* two equal columns */
-    gap: 2rem; /* space between projects */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;} 
+*/
+
+
+#projects {
+    margin-left: 220px;
+    padding: 2rem;
+    max-width: none;
+    column-count: 2;
+    column-gap: 2rem;
+    width: calc(100% - 220px);
+    box-sizing: border-box;
 }
 
 .project {
-    min-height: auto;
     width: 100%;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    display: block;
     font-family: Roboto, Helvetica, Arial, sans-serif;
+    break-inside: avoid;
+    margin-bottom: 2rem;
 }
 
 .project-content {
