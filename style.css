@@ -5,6 +5,11 @@
     --mulberry: #d357bb;
     --spray: #72ced7;
     --wild-yonder: #6f85b9;
+    --lavender: #e8d7ea;
+    --midnight: #191970;
+    --ivory: #E4E4DE;
+    --eerie: #1B1B1B;
+    --sage: #C4C5BA;
 }
 
 /* Base styles */
@@ -13,19 +18,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #ffffff; /* white background */
-    color: #000000; /* black text */
+    background-color: var(--ivory); /* white background */
+    color: var(--eerie); /* black text */
 }
 
 /* Header */
 header {
     padding: 1rem;
-    background-color: #ffffff; /* white background */
+    background-color: var(--ivory); /* white background */
     border: none; /* remove border */
 }
 
 header h1 {
-    color: #000000; /* black text */
+    color: var(--eerie); /* black text */
     margin: 0;
     font-family: 'Racing Sans One', sans-serif; /* header font */
     font-size: 60px;
@@ -36,8 +41,8 @@ header h1 {
 /* Sidebar */
 .sidebar {
     width: 200px;
-    background-color: #ffffff; /* white sidebar */
-    color: #000000; /* black text */
+    background-color: var(--ivory); /* white sidebar */
+    color: var(--eerie); /* black text */
     padding: 1rem;
     height: 100vh;
     position: fixed;
@@ -53,7 +58,7 @@ header h1 {
 
 .sidebar a {
     display: block;
-    color: #000000; /* black links */
+    color: var(--eerie); /* black links */
     text-decoration: none;
     font-family: 'Racing Sans One', sans-serif; /* sidebar font */
     font-weight: bold;
@@ -66,7 +71,7 @@ header h1 {
 }
 
 .sidebar a:hover {
-    color: var(--mulberry); /* accent color on hover */
+    color: var(--eerie); /* accent color on hover */
     font-size: 22px;
 }
 
@@ -78,7 +83,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000; /* black text */
+    color: var(--eerie); /* black text */
     font-family: Roboto, Helvetica, Arial, sans-serif; /* small/body text */
 }
 
@@ -87,12 +92,12 @@ section {
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto 2rem auto;
-    color: #000000; /* black text */
+    color: var(--eerie); /* black text */
     font-family: Roboto, Helvetica, Arial, sans-serif; /* small/body text */
 }
 
 h2 {
-    border-bottom: 2px solid #000000; /* black underline */
+    border-bottom: 2px solid var(--eerie); /* black underline */
     padding-bottom: 0.5rem;
     font-family: 'Racing Sans One', sans-serif; /* header font */
 }
@@ -106,7 +111,7 @@ h2 {
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0.5rem auto 2rem auto;
-    color: #333333;
+    color: var(--eerie);
 }
 
 /* 
@@ -131,12 +136,14 @@ h2 {
 }
 
 .project {
-    width: 100%;
-    background-color: #ffffff;
+    width: 95%;
+    background-color: var(--sage);
     display: block;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     break-inside: avoid;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .project-content {
@@ -146,17 +153,18 @@ h2 {
     padding: 0;
     border-radius: 0;
     text-align: center;
-    color: #000000;
+    color: var(--eerie);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     width: 100%;
 }
 
 .project-img {
-    max-width: 100%; /* use full width of column */
-    width: 100%;
+    max-width: 90%; /* use full width of column */
+    width: 90%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    display: block;
 }
 
 .project-info {
@@ -210,7 +218,7 @@ body:has(#resume-section) footer {
     font-size: 1.1rem;
     max-width: 600px;  /* same width as body text */
     margin: 0.5rem auto 2rem auto; /* spacing above and below */
-    color: #333333; /* optional subtle color */
+    color: var(--eerie); /* optional subtle color */
 }
 
 .gallery {
@@ -237,8 +245,8 @@ body:has(#resume-section) footer {
 
 /* Footer */
 footer {
-    background: #ffffff; /* white footer */
-    color: #000000; /* black text */
+    background: var(--ivory); /* white footer */
+    color: var(--eerie); /* black text */
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
