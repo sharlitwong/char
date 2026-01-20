@@ -12,221 +12,316 @@
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     </head>
     <body class="project-page">
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <h2>Charlotte Wong</h2>
-        <a href="../index.html">Home</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../resume.html">Resume</a>
-        <a href="../dance.html">Dance</a>
-        <a href="../art.html">Art</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Charlotte Wong</h2>
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../dance.html">Dance</a>
+            <a href="../art.html">Art</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
 
-    <div class="main-content">
-        <header>
-            <h1>Snake</h1>
-            <p class="projects-blurb">
-                SystemVerilog on a UPDuino to implement the Snake Arcade Game.
-            </p>
-        </header>
+        <div class="main-content">
+            <header>
+                <h1>Snake</h1>
+                <p class="projects-blurb">
+                    SystemVerilog on a UPDuino to implement the Snake Arcade Game.
+                </p>
+            </header>
 
-        <!-- Project Details Section -->
-        <div class="project-details">
-            <div class="project-info">
-                        <p><strong>Field:</strong> EE</p>
-                        <p><strong>Specific:</strong> Digital Logic </p>
-                        <p><strong>Duration:</strong> Nov. 2025 - Jan. 2025</p>
-                        <p><strong>Skills:</strong> SystemVerilog, Python, FPGA, breadboard prototyping, Git</p>
-            </div>
-
-            <h2>Overview</h2>
-            <p>
-                A completely hardware-based implementation of the classic Snake 
-                game using SystemVerilog on an FPGA, featuring 
-                VGA video output and an NES controller for user input. The game runs 
-                on a 480×640 VGA display using 20×20 macropixels, resulting in a 
-                discrete 23×22 grid where the snake moves at a slowed game clock 
-                for a retro visual effect. Game logic is managed via a 
-                finite state machine that handles movement, eating apples, 
-                scoring, growth, collision detection, and game-over behavior. 
-                Apples spawn at pseudo-random locations using LFSR-based random 
-                number generation, while graphics such as the snake, apple, 
-                score digits, and game-over screen are rendered using ROM-based 
-                pixel art and real-time VGA coordinate calculations. The system 
-                integrates multiple clock domains, NES input decoding, visual 
-                and audio feedback, and modular design  to produce a 
-                fully playable and stable Snake game running entirely on 
-                hardware.
-
-            </p>
-
-            <h2>Technical Details</h2>
-            
-            <div class="slideshow-container">
-                <!-- Slide 1 -->
-                 <div class="slide">
-                    <h3>Block Diagram</h3>
-                    <div class="slide-images">
-                        <img src="Snake Block Diagram.png" alt="Block Diagram">
-                    </div>
-                    <p>SystemVerilog implementation on UPDuino FPGA, integrating VGA controller, NES input decoder, and game logic FSM.</p>
+            <!-- Project Details Section -->
+            <div class="project-details">
+                <div class="project-info">
+                    <p><strong>Field:</strong> EE</p>
+                    <p><strong>Specific:</strong> Digital Logic </p>
+                    <p><strong>Duration:</strong> Nov. 2025 - Jan. 2025</p>
+                    <p><strong>Skills:</strong> SystemVerilog, Python, FPGA, breadboard prototyping, Git</p>
                 </div>
 
-                <!-- Slide 2 -->
-                 <div class="slide active">
-                    <h3>VGA Display Output</h3>
-                    <div class="slide-images">
-                        <img src="snake.jpg" alt="VGA Display">
-                    </div>
-                    <p>The game runs on a 480×640 VGA display using 20×20 macropixels, creating a discrete 23×22 grid for the classic Snake gameplay experience.</p>
-                </div>
+                <h2>Overview</h2>
+                <p>
+                    A completely hardware-based implementation of the classic Snake 
+                    game using SystemVerilog on an FPGA, featuring 
+                    VGA video output and an NES controller for user input. The game runs 
+                    on a 480×640 VGA display using 20×20 macropixels, resulting in a 
+                    discrete 23×22 grid where the snake moves at a slowed game clock 
+                    for a retro visual effect. Game logic is managed via a 
+                    finite state machine that handles movement, eating apples, 
+                    scoring, growth, collision detection, and game-over behavior. 
+                    Apples spawn at pseudo-random locations using LFSR-based random 
+                    number generation, while graphics such as the snake, apple, 
+                    score digits, and game-over screen are rendered using ROM-based 
+                    pixel art and real-time VGA coordinate calculations. The system 
+                    integrates multiple clock domains, NES input decoding, visual 
+                    and audio feedback, and modular design  to produce a 
+                    fully playable and stable Snake game running entirely on 
+                    hardware.
+                </p>
+
+                <h2>Technical Details</h2>
                 
-
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <h3>Finite State Machine</h3>
-                    <div class="slide-images">
-                        <img src="Snake State Machine.png" alt="Gameplay">
+                <div class="slideshow-container">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <h3>Block Diagram</h3>
+                        <div class="slide-images">
+                            <img src="Snake Block Diagram.png" alt="Block Diagram">
+                        </div>
+                        <p>SystemVerilog implementation on UPDuino FPGA, integrating VGA controller, NES input decoder, and game logic FSM.</p>
                     </div>
-                    <p> Logic handled in top.sv module.
-                    </p>
-                </div>
 
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <h3>Wiring</h3>
-                    <div class="slide-images">
-                        <img src="bread.png" alt="Gameplay">
+                    <!-- Slide 2 -->
+                    <div class="slide active">
+                        <h3>VGA Display Output</h3>
+                        <div class="slide-images">
+                            <img src="snake.jpg" alt="VGA Display">
+                        </div>
+                        <p>The game runs on a 480×640 VGA display using 20×20 macropixels, creating a discrete 23×22 grid for the classic Snake gameplay experience.</p>
                     </div>
-                    <p> Breadboard wiring to interface VGA, NES & FPGA.
-                    </p>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <h3>Finite State Machine</h3>
+                        <div class="slide-images">
+                            <img src="Snake State Machine.png" alt="Gameplay">
+                        </div>
+                        <p>Logic handled in top.sv module.</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <h3>Wiring</h3>
+                        <div class="slide-images">
+                            <img src="bread.png" alt="Gameplay">
+                        </div>
+                        <p>Breadboard wiring to interface VGA, NES & FPGA.</p>
+                    </div>
+
+                    <!-- Navigation arrows -->
+                    <a class="prev" onclick="changeSlide(this, -1)">❮</a>
+                    <a class="next" onclick="changeSlide(this, 1)">❯</a>
                 </div>
 
-                <!-- Navigation arrows -->
-                <a class="prev" onclick="changeSlide(this, -1)">❮</a>
-                <a class="next" onclick="changeSlide(this, 1)">❯</a>
-            </div>
+                <!-- Dots -->
+                <div class="dots-container"></div>
 
-            <!-- Dots -->
-            <div class="dots-container">
-            </div>
-
-            <h2>Challenges & Solutions</h2>
-            <!-- Second slideshow in Challenges & Solutions -->
-
-
-    <div class="slideshow-container">
-        <!-- Slide with just text -->
-        <div class="slide active">
-            <h3>Challenge: Unpredictable NES module</h3>
-            <p>NES</p>
-        </div>
-        
-        <!-- Slide with text and image -->
-        <div class="slide">
-            <h3>Solution: Clock Synchronization</h3>
-                <div class="slide-images">
-                    <img src="solution.png" alt="Solution diagram">
+                <h2>Challenges & Solutions</h2>
+                
+                <!-- Second slideshow in Challenges & Solutions -->
+                <div class="slideshow-container">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <h3>Challenge: Debugging the NES</h3>
+                        <div class="slide-images">
+                            <img src="nes.png" alt="Solution diagram">
+                        </div>
+                        <p>
+                            When testing our NES controller, we found that pressing up didn't
+                            always result in upward motion, and the same issue occured with 
+                            every other direction. Sometimes pressing up would result in 
+                            leftward motion (or quite literally any other direction).
+                            Diagnosing the cause of this bug proved to be 
+                            difficult, as our typical strategies of print statements would be
+                            extremely difficult on an FPGA. 
+                        </p>
+                        <p>
+                            *Swipe for problem diagnosis.*
+                        </p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide active">
+                        <h3>Diagnosis: Perpetually high latch</h3>
+                        <p>
+                            We partially diagnosed the problem by altering our display to 
+                            a testing version, where upwards motion would result in the 
+                            entire screen becoming teal, rightward motion green; each direction
+                            had a color. When pressing any single button, the screen would 
+                            appear with stripes of different colors, indicating somehow there
+                            were conflicting signals simultaneously or rapidly alternating. 
+                        </p>
+                        <p>
+                            What should happen: latch goes high -> 
+                            right burron is pressed -> controller's 
+                            internal circuits transmit signal to FPGA -> latch pulse goes 
+                            low -> controller outputs 8 bits serially -> 8 clock pulses 
+                            result in 8 bits read to be decoded.
+                        </p>
+                        <p>
+                            What actually happens: Our internal latch signal was perpetually high,
+                            this was the signal that supposedly triggered a "moment" to capture
+                            signals in the NES controller. With the latch always high, the current 
+                            state was captured and recaptured forever, never outputting serial 
+                            data. Thus, the shift register outputs we were using for our 
+                            game logic must have contain garbage values. The "serial" data was not 
+                            being read in as intended, thus was likely floating, or at previous values, which
+                            then read as random, and were shifted into our shift register, providing illogical values
+                            indicating multiple directions being pressed at once.
+                        </p>
+                        <p>
+                            *Swipe for Problem Solution.*
+                        </p>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide active">
+                        <h3>Solution: </h3>
+                        <p>
+                            Steps to correct readings from NES (1) Latch HIGH (2) Latch 
+                            LOW (3) 8 clock edges. Our code was missing step two. After 
+                            adding this step, the NES began reading the button presses 
+                            correctly.
+                        </p>
+                    </div>
+                
+                    <a class="prev" onclick="changeSlide(this, -1)">❮</a>
+                    <a class="next" onclick="changeSlide(this, 1)">❯</a>
                 </div>
-                <p>Implemented proper clock domain crossing with synchronizers.</p>
+                <div class="dots-container"></div>
+
+
+                <!-- Problem 2: Memory Constraints -->
+                <div class="slideshow-container">
+                    <div class="slide"> 
+                        <h3>Challenge: Memory Constraints</h3>
+                        <div class="slide-images">
+                            <img src="upduino.png" alt="Solution diagram">
+                        </div>
+                        <p>
+                            All memory is limited. We decided to implement graphics
+                            stored in ROM instances for many of our more detailed visuals,
+                            including the apple, numbers, letters, and game over screen. 
+                            As such, limited remaining look up tables remained for other purposes.
+                        </p>
+                        <p>
+                            This became an issue primarily when we began implementing
+                            the snake's incrementing length as it consumes apples. Our 
+                            best method to handle the dynamic nature of the snakes length
+                            was to use a large register to hold the x & y coordinates of 
+                            each segment, and an additional register to hold the length of the
+                            snake to signify which coordinates were significant. The size
+                            of this register became limited by our FPGA memory.
+                        </p>
+                        <p>
+                            *Swipe for problem diagnosis.*
+                        </p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide active">
+                        <h3>Diagnosis: Incremental Testing</h3>
+                        <p>
+                            diagnosis
+                        </p>
+                        <p>
+                            *Swipe for Problem Solution.*
+                        </p>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide active">
+                        <h3>Solution: </h3>
+                        <p>
+                            We consulted with our professor for a more memory efficient
+                            way to store the coordinates for each block of the snake. 
+                        </p>
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(this, -1)">❮</a>
+                    <a class="next" onclick="changeSlide(this, 1)">❯</a>
+                </div>
+                <div class="dots-container"></div>
+
+                <h2>Results</h2>
+                <p>The project successfully implemented a fully functional Snake game on hardware.</p>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/sharlitwong/Snake-Game" target="_blank" 
+                       style="display: inline-block; margin-right: 15px; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">
+                        View on GitHub
+                    </a>
+                    <a href="path/to/report.pdf" target="_blank" 
+                       style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">
+                        Read Full Report
+                    </a>
+                </div>
+
+                <a href="../projects.html" style="display: inline-block; margin-top: 30px; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">← Back to Projects</a>
             </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Charlotte Wong</p>
+        </footer>
+
+        <script>
+            let slideIndices = [1, 1, 1]; // Track index for each slideshow (first and second)
             
-            <a class="prev" onclick="changeSlide(this, -1)">❮</a>
-            <a class="next" onclick="changeSlide(this, 1)">❯</a>
-        </div>
-        <div class="dots-container"></div>
-    </div>
-
-    <h2>Results</h2>
-        <p>The project successfully implemented a fully functional Snake game on hardware.</p>
-
-        <div style="margin-top: 20px;">
-            <a href="https://github.com/yourusername/snake-game" target="_blank" 
-            style="display: inline-block; margin-right: 15px; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">
-                View on GitHub
-            </a>
-            <a href="path/to/report.pdf" target="_blank" 
-            style="display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">
-                Read Full Report
-            </a>
-        </div>
-
-            <a href="../projects.html" style="display: inline-block; margin-top: 30px; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">← Back to Projects</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Charlotte Wong</p>
-    </footer>
-
-    <script>
-        let slideIndices = [1, 1]; // Track index for each slideshow (first and second)
-        
-        // Initialize all slideshows on page load
-        function initAllSlideshows() {
-            let containers = document.querySelectorAll('.slideshow-container');
+            // Initialize all slideshows on page load
+            function initAllSlideshows() {
+                let containers = document.querySelectorAll('.slideshow-container');
+                
+                containers.forEach((container, index) => {
+                    let slides = container.querySelectorAll('.slide');
+                    let dotsContainer = container.nextElementSibling; // Gets the dots-container right after
+                    
+                    // Clear existing dots
+                    dotsContainer.innerHTML = '';
+                    
+                    // Create a dot for each slide
+                    for (let i = 0; i < slides.length; i++) {
+                        let dot = document.createElement('span');
+                        dot.className = 'dot';
+                        dot.onclick = function() { currentSlide(index, i + 1); };
+                        dotsContainer.appendChild(dot);
+                    }
+                    
+                    // Show the first slide
+                    showSlide(index, slideIndices[index]);
+                });
+            }
             
-            containers.forEach((container, index) => {
+            function changeSlide(element, n) {
+                // Find which slideshow this button belongs to
+                let container = element.closest('.slideshow-container');
+                let allContainers = document.querySelectorAll('.slideshow-container');
+                let index = Array.from(allContainers).indexOf(container);
+                
+                slideIndices[index] += n;
+                showSlide(index, slideIndices[index]);
+            }
+
+            function currentSlide(index, n) {
+                slideIndices[index] = n;
+                showSlide(index, slideIndices[index]);
+            }
+
+            function showSlide(index, n) {
+                let containers = document.querySelectorAll('.slideshow-container');
+                let container = containers[index];
                 let slides = container.querySelectorAll('.slide');
-                let dotsContainer = container.nextElementSibling; // Gets the dots-container right after
+                let dotsContainer = container.nextElementSibling;
+                let dots = dotsContainer.querySelectorAll('.dot');
                 
-                // Clear existing dots
-                dotsContainer.innerHTML = '';
+                if (n > slides.length) { slideIndices[index] = 1; }
+                if (n < 1) { slideIndices[index] = slides.length; }
                 
-                // Create a dot for each slide
                 for (let i = 0; i < slides.length; i++) {
-                    let dot = document.createElement('span');
-                    dot.className = 'dot';
-                    dot.onclick = function() { currentSlide(index, i + 1); };
-                    dotsContainer.appendChild(dot);
+                    slides[i].classList.remove('active');
                 }
                 
-                // Show the first slide
-                showSlide(index, slideIndices[index]);
-            });
-        }
-        
-        function changeSlide(element, n) {
-            // Find which slideshow this button belongs to
-            let container = element.closest('.slideshow-container');
-            let allContainers = document.querySelectorAll('.slideshow-container');
-            let index = Array.from(allContainers).indexOf(container);
-            
-            slideIndices[index] += n;
-            showSlide(index, slideIndices[index]);
-        }
-
-        function currentSlide(index, n) {
-            slideIndices[index] = n;
-            showSlide(index, slideIndices[index]);
-        }
-
-        function showSlide(index, n) {
-            let containers = document.querySelectorAll('.slideshow-container');
-            let container = containers[index];
-            let slides = container.querySelectorAll('.slide');
-            let dotsContainer = container.nextElementSibling;
-            let dots = dotsContainer.querySelectorAll('.dot');
-            
-            if (n > slides.length) { slideIndices[index] = 1; }
-            if (n < 1) { slideIndices[index] = slides.length; }
-            
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].classList.remove('active');
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove('active');
+                }
+                
+                slides[slideIndices[index] - 1].classList.add('active');
+                dots[slideIndices[index] - 1].classList.add('active');
             }
             
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].classList.remove('active');
-            }
-            
-            slides[slideIndices[index] - 1].classList.add('active');
-            dots[slideIndices[index] - 1].classList.add('active');
-        }
-        
-        // Initialize when page loads
-        initAllSlideshows();
-    </script>
-
+            // Initialize when page loads
+            initAllSlideshows();
+        </script>
     </body>
 </html>
