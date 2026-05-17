@@ -115,10 +115,19 @@ section {
     margin-left: var(--sidebar-margin);
     padding: 2rem;
     max-width: none;
-    column-count: 2;
-    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     width: calc(100% - var(--sidebar-margin));
     box-sizing: border-box;
+    align-items: start;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    align-self: start;  /* ← add this */
 }
 
 .project {
@@ -126,8 +135,7 @@ section {
     background-color: rgba(196, 197, 186, 0.5);
     display: block;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    break-inside: avoid;
-    margin-bottom: 3rem;
+    margin-bottom: 0;  /* ← change from 3rem to 0 */
     padding: 1rem;
     border-radius: 8px;
 }
@@ -165,12 +173,6 @@ section {
 .project-info p {
     margin: 0;
     text-align: left;
-}
-
-.project-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
 }
 
 .project-link:hover .project {
