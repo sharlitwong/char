@@ -70,20 +70,24 @@ const projects = [
 
 const section = document.getElementById("projects");
 
-section.innerHTML = projects.map(p => `
+const card = p => `
   <a href="${p.href}" class="project-link">
     <div class="project">
       <img src="${p.img}" alt="${p.alt}" class="project-img">
       <div class="project-content">
         <h3>${p.title}</h3>
-        <div class="project-info">
-          <p><strong>Field:</strong> ${p.field}</p>
-          <p><strong>Specific:</strong> ${p.specific}</p>
-          <p><strong>Duration:</strong> ${p.duration}</p>
-          <p><strong>Skills:</strong> ${p.skills}</p>
-        </div>
         <p>${p.description}</p>
       </div>
     </div>
   </a>
-`).join("");
+`;
+
+// Alternate projects between two columns so they read left-to-right
+// while each column stacks with no gaps
+const left = projects.filter((p, i) => i % 2 === 0);
+const right = projects.filter((p, i) => i % 2 === 1);
+
+section.innerHTML = `
+  <div class="project-column">${left.map(card).join("")}</div>
+  <div class="project-column">${right.map(card).join("")}</div>
+`;
