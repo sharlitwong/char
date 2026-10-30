@@ -1,6 +1,24 @@
 
 const projects = [
   {
+    img: "lane/pcb.png",
+    alt: "Custom PCB layout for the lane-following robot",
+    title: "Autonomous Lane-Following Bot",
+    field: "EE",
+    specific: "Embedded Systems",
+    duration: "Sept. 2026 - Present",
+    skills: "ESP32-S3, C++, PlatformIO, PWM, motor control, encoders, WebSockets, Altium PCB design",
+    description: "An ESP32-S3 robot with a custom PCB, encoder-based wheel-speed control, IR distance sensing, and a 7-state state machine controlled over WebSockets. Built for EE31 Junior Design at Tufts."
+  },
+  {
+    title: "64-bit LEGv8 Single-Cycle Processor",
+    field: "EE",
+    specific: "Computer Architecture",
+    duration: "Sept. 2026 - Present",
+    skills: "SystemVerilog, RTL design, self-checking testbenches, Synopsys VCS, waveform debugging",
+    description: "A working single-cycle CPU in SystemVerilog, with self-checking testbenches for its modules, built for EE25 at Tufts."
+  },
+  {
     href: "violin/violin.html",
     img: "violin/vln.png",
     alt: "Violin CAD Model using SolidWorks",
@@ -65,22 +83,33 @@ const projects = [
     duration: "Nov. 2025 - Dec. 2025",
     skills: "LTSpice, breadboard prototyping, AD2, Waveforms, oscilloscope",
     description: "A positive edge sensitive D flip flop built using NMOS' and PMOS'."
+  },
+  {
+    title: "Pacbot",
+    field: "EE",
+    specific: "Robotics",
+    description: "A robot that plays Pac-Man autonomously in a physical arena, built with the Tufts robotics club."
   }
 ];
 
 const section = document.getElementById("projects");
 
-const card = p => `
-  <a href="${p.href}" class="project-link">
-    <div class="project">
-      <img src="${p.img}" alt="${p.alt}" class="project-img">
-      <div class="project-content">
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-      </div>
+const cardBody = p => `
+  <div class="project">
+    ${p.img
+      ? `<img src="${p.img}" alt="${p.alt}" class="project-img">`
+      : `<div class="project-img-placeholder">Photo coming soon</div>`}
+    <div class="project-content">
+      <h3>${p.title}</h3>
+      <p>${p.description}</p>
     </div>
-  </a>
+  </div>
 `;
+
+// Projects without their own page yet show a card that isn't clickable
+const card = p => p.href
+  ? `<a href="${p.href}" class="project-link">${cardBody(p)}</a>`
+  : `<div class="project-link project-no-page">${cardBody(p)}</div>`;
 
 // Alternate projects between two columns so they read left-to-right
 // while each column stacks with no gaps

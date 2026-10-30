@@ -85,6 +85,58 @@ header h1 {
     font-size: 22px;
 }
 
+/* The line under the name moves below the social icons */
+body nav.sidebar h2 {
+    margin: 0.83em 0 0 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Social Icons */
+.social-links {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--eerie);
+}
+
+.sidebar .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--sage);
+    color: var(--eerie);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .social-link:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.copy-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 2px 0 0 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
 /* Main Content */
 .main-content {
     margin-left: var(--sidebar-margin);
@@ -149,6 +201,20 @@ section {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.project-img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    background-color: var(--sage);
+    color: var(--eerie);
+}
+
+.project-no-page:hover .project {
+    transform: none;
+    box-shadow: none;
 }
 
 .project-content {
